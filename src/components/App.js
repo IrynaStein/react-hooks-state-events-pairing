@@ -4,7 +4,8 @@ import VideoInfo from "./VideoInfo"
 import Buttons from "./Buttons"
 
 function App() {
-  const { title, comments, views, createdAt, downvotes, upvotes } = video
+  console.log(video)
+  const { title, comments, views, createdAt, downvotes, upvotes, embedUrl } = video
   const [upVotes, setUpVotes] = useState(upvotes)
   const [downVotes, setDownVotes] = useState(downvotes)
   
@@ -24,7 +25,7 @@ function App() {
       <iframe
         width="919"
         height="525"
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        src={embedUrl}
         frameborder="0"
         allowfullscreen
         title="Thinking in React"

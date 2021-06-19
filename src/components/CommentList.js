@@ -12,9 +12,9 @@ function CommentList({ comments, commentsPanel }) {
                 )
             })
         }
-        else {
-            return null
-        }
+        // else {
+        //     return null
+        // }
         
     }
     return (
