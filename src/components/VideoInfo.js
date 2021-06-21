@@ -1,5 +1,5 @@
 
-function VideoInfo({ title, views, createdAt, downvotes, upvotes }) {
+function VideoInfo({ title, views, createdAt}) {
     return (
         <div>
             <h1>{title}</h1>
